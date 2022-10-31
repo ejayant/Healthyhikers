@@ -1,0 +1,312 @@
+/* MEDIA QUERY */
+
+/* 
+0 - 600px : Phone
+600px - 900px : Tablet portrait
+900px - 1200px : Tablet landscape
+1200px - 1800px : Desktop Version[Our Normal Style]
+Above 1800px : Bigger Desktop
+*/
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  (min-width: 125em) {
+  .header {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.8),
+        rgba(40, 180, 133, 0.8)
+      ),
+      url(../img/hero-small.jpg);
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  /* 112.5em = 1800px/16px */
+  html {
+    /* 1rem = 12px, 12px/16px=75%  */
+    font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  /* 75em = 1200px/16px */
+  html {
+    /* 1rem = 9px, 9px/16px=56.25%  */
+    font-size: 56.25%;
+  }
+  .book {
+    background-image: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../img/nat-10.jpg);
+  }
+
+  .book-form {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  /* 56.25em = 900px/16px */
+  html {
+    /* 1rem = 8px, 8px/16px=50%  */
+    font-size: 50%;
+  }
+
+  body {
+    padding: 0;
+  }
+  .heading-primary--main {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+  }
+  .heading-primary--sub {
+    letter-spacing: 0.5rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .grid--4-cols,
+  .grid--3-cols,
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+  }
+
+  .container {
+    max-width: 50rem;
+  }
+
+  .navigation-button {
+    top: 4rem;
+    right: 4rem;
+  }
+
+  .navigation-background {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+
+  .section-about {
+    padding: 20rem 0;
+  }
+
+  .section-features {
+    padding: 10rem 0;
+  }
+  .section-tours {
+    padding: 20rem 0 10rem 0;
+  }
+  .section-stories {
+    padding: 10rem 0;
+  }
+  .section-book {
+    padding: 10rem 0;
+  }
+  .margin-bottom-big {
+    margin-bottom: 5rem !important;
+  }
+
+  .margin-bottom-medium {
+    margin-bottom: 3rem !important;
+  }
+  .composition-photo {
+    width: 40%;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  }
+  .composition-photo-1 {
+    left: -2rem;
+    top: 0;
+  }
+  .composition-photo-2 {
+    left: 15.5rem;
+    top: -1rem;
+    z-index: 999;
+  }
+  .composition-photo-3 {
+    left: 33rem;
+    top: 0;
+  }
+
+  .feature-box {
+    padding: 2rem 2.5rem;
+  }
+
+  .feature-box-icon {
+    margin-bottom: 0;
+  }
+
+  /* Tours section (Updation in cards)*/
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: var(--white);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+
+  .card-side {
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+
+  .card-side--back {
+    transform: rotateY(0);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .card:hover .card-side--front {
+    transform: rotateY(0);
+  }
+
+  .card-details {
+    padding: 1rem 3rem;
+  }
+
+  /* Card back part */
+
+  .card-cta {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 7rem 4rem 4rem 4rem;
+  }
+
+  .card-price-box {
+    margin-bottom: 3rem;
+  }
+
+  .card-price-value {
+    font-size: 4rem;
+  }
+
+  .story {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
+  .book {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 100%
+      ),
+      url(../img/nat-10.jpg);
+  }
+  .book-form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: var(--white);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+
+  .card-side {
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+
+  .card-side--back {
+    transform: rotateY(0);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .card:hover .card-side--front {
+    transform: rotateY(0);
+  }
+
+  .card-details {
+    padding: 1rem 3rem;
+  }
+
+  /* Card back part */
+
+  .card-cta {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 7rem 4rem 4rem 4rem;
+  }
+
+  .card-price-box {
+    margin-bottom: 3rem;
+  }
+
+  .card-price-value {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  /* 37.5em = 600px/16px */
+  html {
+    /* 1rem = 8px, 8px/16px=50%  */
+    font-size: 50%;
+  }
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+
+  .header {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
+  .navigation-button {
+    top: 3rem;
+    right: 3rem;
+  }
+
+  .navigation-background {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
+
+  .footer-logo-box {
+    margin-bottom: 5rem;
+  }
+
+  .story {
+    transform: skewX(0);
+  }
+
+  .story-shape {
+    transform: translateX(-3rem) skewX(0);
+  }
+  .story-text {
+    transform: skewX(0);
+  }
+  .composition-photo {
+    width: 30%;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  }
+  .composition-photo-1 {
+    left: 5rem;
+    top: 0;
+  }
+  .composition-photo-2 {
+    left: 17.5rem;
+    top: -1rem;
+    z-index: 999;
+  }
+  .composition-photo-3 {
+    left: 30rem;
+    top: 0;
+  }
+}
