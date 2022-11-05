@@ -1,4 +1,4 @@
-# [HealthyHikers](https://naturestours.netlify.app/) [HTML/CSS]
+# [HealthyHikers](https://healthyhikers.netlify.app/) [HTML/CSS]
 ## Fully Responsive Website
 ![image](https://user-images.githubusercontent.com/55839740/198873438-a84fb0ef-b665-453d-9f3f-a329d68a9e0d.png)
 ![image](https://user-images.githubusercontent.com/55839740/198873463-d6c2b847-d44f-41f9-830a-6ddee27db196.png)
